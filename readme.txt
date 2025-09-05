@@ -1,44 +1,35 @@
-AutoAccept
+# 🎮 AutoAccept
 
-Description:
-AutoAccept is a Python automation script that automatically accepts a game match by detecting the "Accept" button on the screen and clicking it. It simplifies the process of joining matches without manual input.
+**AutoAccept** automatically accepts a game match by detecting the "Accept" button on your screen and clicking it, saving you time and effort.
 
-Features:
+---
 
-Automatically searches for and clicks the "Accept" button.
+## ⚡ Features
+- Automatically searches for and clicks the "Accept" button.
+- Adjustable search interval and maximum attempts.
+- Works on Windows out of the box, no manual setup needed.
 
-Adjustable search interval and maximum attempts.
+---
 
-Works on Windows out of the box.
+## 🛠️ Requirements
+- Windows with Python installed.
+- **No manual installation of packages** — the included batch file handles everything.
 
-Requirements:
+---
 
-Windows system with Python installed.
+## 🚀 Setup & Usage
+1. Place all project files in the same folder:
+   - `autoaccept.py`
+   - `autoaccept.bat`
+   - `requirements.txt`
+   - Screenshot of the "Accept" button (`Prynyat igru(tolko prinyat).png`)
+2. Double-click `autoaccept.bat`. It will:
+   - Create a virtual environment (`venv`) if needed
+   - Install all required libraries automatically
+   - Run the script
 
-No manual installation of Python packages is needed; the included batch file handles everything.
+---
 
-Setup & Usage:
-
-Place all project files in the same folder:
-
-autoaccept.py
-
-autoaccept.bat
-
-requirements.txt
-
-Screenshot of the "Accept" button (Prynyat igru(tolko prinyat).png)
-
-Double-click autoaccept.bat. It will:
-
-Create a virtual environment if needed
-
-Install all required libraries automatically
-
-Run the script
-
-Notes:
-
-Ensure the screenshot matches the in-game "Accept" button.
-
-The virtual environment is created as venv inside the project folder.
+## ⚠️ Notes
+- Make sure the screenshot matches your game's "Accept" button.
+- The virtual environment is created inside the project folder (`venv`).
