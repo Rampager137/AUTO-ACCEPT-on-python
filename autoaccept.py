@@ -3,22 +3,28 @@ import time
 import os
 import sys
 
-# Путь к изображению кнопки (указывай путь без русских букв)
-image_path = r"E:\python projects\Prynyat igru(tolko prinyat).png"
+# Папка, где лежит этот скрипт
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Проверяем, что файл который ты указал в переменной image_path существует
+# Имя файла с кнопкой
+image_file = "Prynyat igru(tolko prinyat).png"
+
+# Полный путь к картинке
+image_path = os.path.join(script_dir, image_file)
+
+# Проверяем, что файл существует
 if not os.path.exists(image_path):
     print(f"Файл изображения не найден: {image_path}")
     sys.exit(1)
 
-# max_attempts максимальное количество повторений программы(Программа повторяется каждую секунду)
+# Максимальное количество попыток
 max_attempts = 120
 attempt = 0
 
 while attempt < max_attempts:
-    attempt += 1 # обычный счетчик повторений, именно это число пишется перед словом "Попытка" в CMD
+    attempt += 1
     try:
-        # Используем confidence (только с OpenCV)
+        # Поиск кнопки на экране (confidence работает только с OpenCV)
         location = pyautogui.locateOnScreen(image_path, confidence=0.8)
         if location:
             pyautogui.click(pyautogui.center(location))
