@@ -33,3 +33,7 @@
 ## ⚠️ Notes
 - Make sure the screenshot matches your game's "Accept" button.
 - The virtual environment is created inside the project folder (`venv`).
+
+
+WARNING! IT WORKS ONLY OR RUSSIAN LANGUAGE LEAGUE OF LEGENDS
+
