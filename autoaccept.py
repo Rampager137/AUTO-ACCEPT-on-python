@@ -18,7 +18,7 @@ if not os.path.exists(image_path):
     sys.exit(1)
 
 # Максимальное количество попыток
-max_attempts = 120
+max_attempts = 600
 attempt = 0
 
 while attempt < max_attempts:
@@ -38,3 +38,4 @@ while attempt < max_attempts:
     time.sleep(1)
 else:
     print("Не удалось найти кнопку за отведённое количество попыток")
+
