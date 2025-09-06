@@ -35,5 +35,6 @@
 - The virtual environment is created inside the project folder (`venv`).
 
 
-WARNING! IT WORKS ONLY OR RUSSIAN LANGUAGE LEAGUE OF LEGENDS
+WARNING! IT WORKS ONLY OR ENGLISH AND RUSSIAN LANGUAGE LEAGUE OF LEGENDS
+
 
